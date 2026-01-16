@@ -57,7 +57,7 @@ RUN set -xe && \
     rm -rf /var/lib/apt/lists/*
 
 ENV LD_PRELOAD=/usr/local/lib/curl-impersonate/libcurl-impersonate.so
-ENV CURL_IMPERSONATE=chrome142
+ENV CURL_IMPERSONATE=firefox144
 
 # logs should go to stdout / stderr
 RUN ln -sfT /dev/stderr /var/log/nginx/error.log; \
